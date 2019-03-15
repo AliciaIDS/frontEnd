@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda Digital</title>
+	<meta charset="utf-8" lang="ES">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  	<link rel="stylesheet" type="text/css" href="./css/agenda.css">
+</head>
+
+<body>
+	<div class="row">
+		<div class="center" id="saludo" >Bienvenido</div>
+	</div>
+	<div class="row">
+		<div class="col s2 m3 l3 lx3"></div>
+		<div class="col col s8 m3 l3 lx3" id="menu">
+			<p><button id="agregar">Agregar Contacto</button></p>
+		</div>
+		<div class="col s2 m3 l3 lx3"></div>
+	</div>
+	<div class="row">
+		<div class="col s2 m3 l3 lx3"></div>
+		<div class="col col s4 m3 l3 lx3" id="menu">
+			<p><button id="modificar">Editar Contacto</button></p>
+		
+		</div>
+		<div class="col col s4 m3 l3 lx3" id="menu">
+			<input type="text" id="anombre" name="" placeholder="Nombre Contacto a Editar">
+			<div class="col s2 m4 l4 lx4"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s2 m3 l3 lx3"></div>
+		<div class="col col s4 m3 l3 lx3" id="menu">
+			<p><button id="eliminar">Eliminar Contacto</button></p>
+		
+		</div>
+		<div class="col col s4 m3 l3 lx3" id="menu">
+			<input type="text" id="enombre" name="" placeholder="Nombre Contacto a Eliminar">
+			<div class="col s2 m4 l4 lx4"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s2 m3 l3 lx3"></div>
+		<div class="col col s4 m3 l3 lx3" id="menu">
+			<p><button id="consultaNombre">Consulta Uno</button></p>
+		
+		</div>
+		<div class="col col s4 m3 l3 lx3" id="menu">
+			<input type="text" id="cnombre" name="" placeholder="Nombre Contacto a Consultar">
+			<div class="col s2 m4 l4 lx4"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s2 m3 l3 lx3"></div>
+		<div class="col col s8 m3 l3 lx3" id="menu">
+			<p><button id="consultaAll">Consulta Todos</button></p>
+		</div>
+		<div class="col s2 m3 l3 lx3"></div>
+	</div>
+	<div class="row hide" id="contenedorTabla">
+		<div class="col s2 m2 l2 lx2"></div>
+		<div class="col s4 m4 l4 lx4" id="tablaDatos" >
+			<p><button id="cerrarAll">Cerrar</button></p>
+			<div id="datos">
+			
+			</div>
+		</div>
+		<div class="col s4 m4 l4 lx4" >
+			<div id="botones">
+			
+			</div>
+		</div>
+		<div class="col s2 m2 l2 lx2"></div>
+	</div>
+	<div class="row hide" id="contenedorElimina">
+		<div class="col s2 m2 l2 lx2"></div>
+		<div class="col s8 m8 l8 lx8" id="tablaUno" >
+			<p><button id="cerrarUno">Cerrar</button></p>
+			<div id="datosE">
+			
+			</div>
+		</div>
+		<div class="col s2 m2 l2 lx2"></div>
+	</div>
+	<div class="row hide" id="contenedorEdita">
+		<div class="col s2 m2 l2 lx2"></div>
+		<div class="col s8 m8 l8 lx8" id="tablaEdita" >
+			<button id="edicion">Guardar</button>
+			<p><button id="cerrarA">Cerrar</button></p>
+			<div id="datosE">
+			
+			</div>
+		</div>
+		<div class="col s2 m2 l2 lx2"></div>
+	</div>
+</body>
+<script>const MVC = {};</script>
+<script type="text/javascript" src="./js/agenda.js"></script>
+<script type="text/javascript" src="./js/consultaTodosContactos.js"></script>
+<script type="text/javascript" src="./js/consultaContacto.js"></script>
+<script type="text/javascript" src="./js/actualizaContacto.js"></script>
+<script type="text/javascript" src="./js/eliminarContacto.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
