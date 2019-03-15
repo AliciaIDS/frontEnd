@@ -49,10 +49,10 @@ window.onload = function(){
 		.then(data =>{
 			if(accion == "consultaTodos"){
 				muestra_oculta();
-				crea_tabla(data);
+				crea_tabla(data,accion);
 			}
 			else{
-				crea_tabla(data);
+				crea_tabla(data,accion);
 				buscar(nombre, accion);
 				cerrar();
 			}
@@ -79,7 +79,7 @@ window.onload = function(){
 		cn.removeChild(el);
 	}
 
-	function crea_tabla(data){
+	function crea_tabla(data, accion){
 		var contenedor = document.getElementById("datos");
 		var tabla   = document.createElement("table");
 		tabla.setAttribute("id", "Tabla");
@@ -207,7 +207,7 @@ window.onload = function(){
 	}
 
 
-	function crearBotonEliminar(){
+	/*function crearBotonEliminar(){
 		var contenedorb = document.getElementById("botones");
 		const botonEliminar = document.createElement('button', {is: 'Eliminar'});
 		botonEliminar.textContent = 'Eliminar';
@@ -215,7 +215,7 @@ window.onload = function(){
 
 	}
 
-	/*function crearBotonActualizar(){
+	function crearBotonActualizar(){
 		var contenedorb = document.getElementById("botones");
 		const botonActualizar = document.createElement('button', {is: 'Actualizar'});
 		botonActualizar.textContent = 'Actualizar';
